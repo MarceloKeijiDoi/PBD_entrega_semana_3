@@ -20,7 +20,7 @@ x_treinamento, x_teste, y_treinamento, y_teste = train_test_split(
 linearRegression = LinearRegression()
 linearRegression.fit(x_treinamento, y_treinamento)
 
-# Exibe a reta obtida e os dados de treinamento em um mesmo gráfico. Incluaa equação obtida no título do gráfico.
+# Exibe a reta obtida e dados de treinamento no mesmo gráfico. Inclua equação obtida no título do gráfico.
 plt.scatter(x_treinamento, y_treinamento, color="red")
 plt.plot(x_treinamento, linearRegression.predict(x_treinamento), color="blue")
 plt.title("metros x valor (Treinamento)")
